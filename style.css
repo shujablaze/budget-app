@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+	background:rgbad(232, 201, 130,0.6) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	
+}
+
+.top,.middle{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.507)),url("hero.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;;
+}
+
+.container{
+	display:grid;
+	grid-template-rows: 160px 150px auto;
+
+
+}
+	
+.middle{
+	padding:40px;
+}
+.bottom{
+	display:flex;
+	justify-content: space-around;
+	
+}
+.top{
+	display:grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 5px;
+	grid-row-gap: 5px;
+	padding:0px;
+
+	
+}
+.income{
+	background: rgba(40, 185, 181, 0.7);
+	background-color-opacity: 0.7;
+	padding: 20px;
+	border:2px solid rgb(15, 77, 75);
+	
+
+	
+}
+.expense{
+	background:rgba(255, 80, 73, 0.7);
+	grid-column: 2/3;
+	grid-row: 2/3;
+	padding: 20px;
+	border:2px solid rgb(125, 36, 32) ;
+	
+}
+.budget{
+	background:rgba(101, 73, 156,0.7);
+	grid-row-start:1;
+	grid-row-end: 3; 
+	padding-top: 20px;
+	border:2px double rgb(71, 43, 126) ;
+	
+}
+
+.income-wrapper{
+	display:flex;
+	justify-content: space-between;
+	background:#28B9B5;
+	font-family: sans-serif;
+	font-size: 18px;
+	margin: 5px;
+	color:white;
+	padding:1px;
+	border:1px solid rgb(15, 77, 75) ;
+}
+.item-income{
+	margin-right: 10px
+}
+.desc-income{
+	
+	width:45%;
+	padding:20px;
+	
+	
+}
+.expense-wrapper{
+	display: flex;
+	justify-content: space-between;
+	background:#FF5049;
+	font-family: sans-serif;
+	font-size: 18px;
+	margin: 5px;
+	color:white;
+	padding:1px;
+	border:1px solid rgb(125, 36, 32)
+}
+.desc-expense{
+	
+	width:45%;
+	padding:20px;
+}
+.top>div span{
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: 500;
+	
+
+}
+.budget-text{
+    color:rgb(71, 43, 126);
+    font-family: sans-serif;
+	font-weight: 500;
+	font-size:35px;
+}
+
+.budget-value{
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size:35px;
+	color:white;
+
+}
+
+.income-text{
+	color:rgb(15, 77, 75);
+}
+.income-value{
+	color:white;
+}
+
+.expense-text{
+	color:rgb(125, 36, 32);
+}
+.expense-value{
+	color:white;
+}
+.choices{
+    width: 55px;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 10px;
+    font-weight: 300;
+    transition: border 0.3s;
+}
+
+.add-description,
+.add-value {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color:rgb(39, 45, 104);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight:560;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.add-description { width: 400px;}
+.add-value { width: 100px;}
+
+.add-bttn {
+    font-size: 25px;
+    color: #28B9B5;
+    cursor: pointer;
+    border:none;
+    vertical-align: middle;
+    line-height: 1.0;
+    margin-left: 10px;
+    transition: 100ms ease;
+}
+.add-bttn:hover{
+	background:#28B9B5;
+	color:white;
+}
+.bottom>div>div div >span>button{    
+	font-size: 15px;
+	font-weight: 800;
+    color: #28B9B5;
+    cursor: pointer;
+    vertical-align: middle;
+    border:none;
+    line-height: 0.7;
+    padding: 2px;
+    margin-left: 5px;
+    transition: 100ms ease; 
+}
+.bottom>div>div div >span>button:hover{
+	background: rgb(207, 66, 85);
+	margin-left:25px;
+	border:none;
+	color:white;
+}
+*:focus{
+    outline: none;
+}
